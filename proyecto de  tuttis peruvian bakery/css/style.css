@@ -1,0 +1,178 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*********** galery **************/
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 20px;
+}
+
+.box {
+    background-color: #444;
+    padding: 5em;
+    margin: 20px;
+}
+
+.box > img {
+    width: 100%;
+    
+}
+
+.box:hover {
+    -webkit-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+}
+
+.box > img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.menu{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.mainNav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    font-size: 0.7em;
+}
+
+.mainNav li{
+
+    
+   
+    padding: 20px;
+}
+
+.mainNav a{ 
+
+    padding: 30px;
+    align-self: flex-end;
+    text-decoration: none;
+    color:#AE7374;
+    
+
+}
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+.logo{
+    grid-area: logo;
+   
+}
+.logo1{
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: baseline;
+
+}
+.logo img{
+    display: flex;
+    justify-content: start;
+    
+}
+   
+main{
+    grid-area: section1;
+}
+.pri {
+   height: 530px;
+    background-image: url(../images/PAN\ FRANCES.jpg);
+    background-size: cover;
+}
+#hi {
+    color: #AE7374;
+}
+.titi{
+    background-color: #080404;
+}
+.tit{
+    background-color: #AE7374;
+}
+.tito{
+    text-align: center;font-size: 30px;
+    color: #AB2A2F;
+}
+
+#ab{
+    line-height: 2;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.pri1{
+    background-color:#080404;
+}
+
+
+
+.jj li{
+    display:inline-block;
+}
+.jj img{
+    
+    text-align: center;
+    height: 530px;
+}
+
+
+
+form{
+    background-color: #AE7374;
+    height:auto;
+    padding: 20px
+}
+
+
+.footer{
+    grid-area: footer;
+}
+
+footer div {
+    height: 45px;
+    background-color: #2B2B2B;
+    
+   
+}
+footer li{
+    display: inline-block;
+}
+
+footer a{
+    text-align: end;
+}
+
+footer img{
+    border-radius: 50%;
+    
+}
+
+
+
